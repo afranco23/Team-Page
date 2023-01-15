@@ -28,7 +28,6 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 96px;
 }
 
 .header h1 {
@@ -59,20 +58,37 @@ body {
     display: grid;
     grid-template-areas: 
     "L M R"
-    "L M R";
-}
-
-#left {
-    grid-area: L;
+    "L2 M2 R2";
 }
 
 #middle {
-    grid-area: M;
-    margin-top: 100px;
+    margin: 100px 67px 115px;
 }
 
-#right {
+#one {
+    grid-area: L;
+}
+
+#two {
+    grid-area: L2;
+}
+
+#three {
+    grid-area: M;
+    padding-top: 100px;
+}
+
+#four {
+    grid-area: M2;
+    padding-top: 100px;
+}
+
+#five {
     grid-area: R;
+}
+
+#six {
+    grid-area: R2;
 }
 
 .person {
@@ -81,6 +97,7 @@ body {
     display: grid;
     grid-template-areas: 
     "A B";
+    margin-top: 100px;
 }
 
 .person img {
@@ -110,8 +127,92 @@ body {
     font-size: 14px;
     text-align: center;
     color: #A9A9A9;
-    margin-top: 115px;
+    margin-top: 150px;
     margin-bottom: 24px;
 }
 
+@media  (max-width: 480px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container {
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header .sub {
+        width: 350px;
+    }
+
+    .header h1 {
+        margin-top: 70px;
+        margin-bottom: 38px;
+    }
+
+    .header h2 {
+        margin-bottom: 10px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-areas: 
+        "A D"
+        "B E"
+        "C F";
+        grid-template-columns: 200px;
+    }
+
+    #one {
+        grid-area: A;
+    }
+
+    #two {
+        grid-area: B;
+    }
+
+    #three {
+        grid-area: C;
+        padding-top: 0px;
+    }
+
+    #four {
+        grid-area: D;
+        padding-top: 50px;
+    }
+
+    #five {
+        grid-area: E;
+        padding-top: 50px;
+    }
+
+    #six {
+        grid-area: F;
+        padding-top: 50px;
+    }
+
+    .person img {
+        width: 138px;
+        height: 209px;
+    }
+
+    .person {
+        height: 237px;
+        width: 156px;
+        margin-bottom: 64px;
+        margin-top: 30px;
+    }
+
+    .footer {
+        margin-top: 40px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        width: 350px;
+    }
+}
 
