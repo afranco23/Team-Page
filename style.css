@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    width: 1440px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 110px 265px 0 240px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.header h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-left: 3px;
+    width: 278px;
+}
+
+.header .sub {
+    font-family: 'Poppins', sans-serif;
+    width: 439px;
+}
+
+.header .sub h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header .sub p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    "L M R"
+    "L M R";
+}
+
+#left {
+    grid-area: L;
+}
+
+#middle {
+    grid-area: M;
+    margin-top: 100px;
+}
+
+#right {
+    grid-area: R;
+}
+
+.person {
+    height:383px;
+    width: 264px;
+    display: grid;
+    grid-template-areas: 
+    "A B";
+}
+
+.person img {
+    grid-area: A;
+    width: 238px;
+    height: 341px;
+}
+
+.person p {
+    grid-area: B;
+    writing-mode: vertical-rl;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.person h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #A9A9A9;
+    margin-top: 115px;
+    margin-bottom: 24px;
+}
+
+
