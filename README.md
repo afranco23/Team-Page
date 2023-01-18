@@ -1,3 +1,3 @@
 # Team-Page
 
-Trying to fix the mobile css
+Team Page challenge from devschallenge.io
